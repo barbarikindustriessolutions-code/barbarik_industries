@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbarik Industries Solutions | Corporate Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: '#0C2340',
+                        slate: '#606C76',
+                        light: '#F8F9FA',
+                        mid: '#E2E8F0',
+                        accent: '#1A4B82'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light text-slate flex flex-col min-h-screen">
+
+    <!-- Navigation -->
+    <header class="bg-white border-b border-mid sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <a href="#" class="flex items-center space-x-3">
+                    <img src="images/input_file_8.png" alt="Barbarik Logo" class="h-12 object-contain" onerror="this.style.display='none'">
+                    <div class="hidden sm:block">
+                        <h1 class="font-bold text-navy text-xl leading-tight">BARBARIK INDUSTRIES</h1>
+                        <p class="text-xs text-slate tracking-widest uppercase">Solutions</p>
+                    </div>
+                </a>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden p-2 text-navy focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                </button>
+
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#company" class="text-sm font-semibold text-navy hover:text-accent">Company</a>
+                    <a href="#products" class="text-sm font-semibold text-navy hover:text-accent">Products</a>
+                    <a href="#partners" class="text-sm font-semibold text-navy hover:text-accent">Partners</a>
+                    <a href="#contact" class="text-sm font-semibold text-navy hover:text-accent">Contact</a>
+                </nav>
+            </div>
+        </div>
+        <!-- Mobile Nav -->
+        <div id="mobile-nav" class="hidden md:hidden bg-white border-t border-mid absolute w-full">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 shadow-lg">
+                <a href="#company" class="block px-3 py-2 text-base font-medium text-navy hover:bg-light">Company</a>
+                <a href="#products" class="block px-3 py-2 text-base font-medium text-navy hover:bg-light">Products</a>
+                <a href="#partners" class="block px-3 py-2 text-base font-medium text-navy hover:bg-light">Partners</a>
+                <a href="#contact" class="block px-3 py-2 text-base font-medium text-navy hover:bg-light">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow">
+        <!-- Hero Section -->
+        <section id="company" class="bg-navy text-white py-24 px-4 text-center">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">Comprehensive Industrial & Aviation Solutions</h2>
+                <p class="text-lg md:text-xl text-gray-300 leading-relaxed mb-8">
+                    At Barbarik Industries Solutions, we believe that world-class infrastructure begins with uncompromising precision and dedicated craftsmanship. We specialize in comprehensive structural and mechanical engineering services, executing projects across a broad spectrum of industries.
+                </p>
+                <a href="#products" class="inline-block bg-white text-navy px-6 py-3 font-semibold rounded hover:bg-gray-100 transition-colors">Explore Our Portfolio</a>
+            </div>
+        </section>
+
+        <!-- Specialization -->
+        <section class="py-20 px-4 max-w-7xl mx-auto">
+            <h2 class="text-3xl font-bold text-navy mb-4">Our Specialization</h2>
+            <div class="h-1 w-20 bg-accent mb-6"></div>
+            <p class="text-lg leading-relaxed text-slate mb-16">
+                We specialize in a diverse range of products and solutions across multiple categories, combining deep product knowledge, industry expertise, and advanced manufacturing capabilities. From state-of-the-art aviation infrastructure to heavy structural steelwork, precision machined components, and automated robotic assemblies, we deliver robust solutions.
+            </p>
+
+            <!-- Leadership -->
+            <h2 class="text-3xl font-bold text-navy mb-4">Executive Leadership</h2>
+            <div class="h-1 w-20 bg-accent mb-8"></div>
+            <div class="bg-white p-8 rounded border border-mid shadow-sm mb-16">
+                <h3 class="text-2xl font-bold text-navy">Vikas Tiwari</h3>
+                <p class="text-accent font-medium mb-6">Director & Business Development Manager</p>
+                <p class="mb-8 text-slate">Dynamic operations and business development leader with extensive experience driving manufacturing excellence across multiple product categories. Proven track record in successfully executing critical infrastructure projects and fostering global OEM partnerships.</p>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="font-bold text-navy mb-4">Core Expertise</h4>
+                        <ul class="list-disc pl-5 text-sm space-y-2">
+                            <li>Cross-Category Production Planning & Operations</li>
+                            <li>Lean Manufacturing & Advanced Fabrication Strategies</li>
+                            <li>Global Vendor Management & Supply Chain Optimization</li>
+                            <li>Large-Scale Infrastructure Project Execution</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-navy mb-4">Key Credentials</h4>
+                        <ul class="list-disc pl-5 text-sm space-y-2">
+                            <li>Delivered 7+ major projects for the Airport Authority of India (AAI) and ONGC.</li>
+                            <li>Strategic collaborations with OEMs: PT. Bukaka, Moventor, Solar, and Bajaj Steel.</li>
+                            <li>B.E. Technology: Mechanical (YCCE) & Certified 'Train the Trainer'.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section id="products" class="py-20 bg-mid px-4">
+            <div class="max-w-7xl mx-auto">
+                <h2 class="text-3xl font-bold text-navy mb-4">Our Product Portfolio</h2>
+                <div class="h-1 w-20 bg-accent mb-12"></div>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Product Card -->
+                    <div class="bg-white rounded shadow-sm border border-gray-200 overflow-hidden">
+                        <img src="images/input_file_2.png" alt="Passenger Boarding Bridges" class="w-full h-48 object-cover" onerror="this.style.display='none'">
+                        <div class="p-6">
+                            <h3 class="font-bold text-navy mb-2">Aviation & Airport Infrastructure</h3>
+                            <p class="text-sm text-slate">Passenger Boarding Bridges (PBB), Baggage Handling Conveyors, and passenger tunnel frameworks engineered for secure, seamless transit. Includes Ground Support Equipment, Barricades, and Platforms.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded shadow-sm border border-gray-200 overflow-hidden">
+                        <img src="images/input_file_9.png" alt="Heavy Structural Fabrication" class="w-full h-48 object-cover" onerror="this.style.display='none'">
+                        <div class="p-6">
+                            <h3 class="font-bold text-navy mb-2">Heavy Structural Fabrication</h3>
+                            <p class="text-sm text-slate">Robust I-beam fabrications, heavy railway bridges, and large-scale structural steel frameworks designed for high dynamic loads. Expertise in Heavy Fabrication, Profile Fabrication, Funnels, Chimneys, Ducting, Platforms.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded shadow-sm border border-gray-200 overflow-hidden">
+                        <img src="images/input_file_10.png" alt="Precision Industrial Components" class="w-full h-48 object-cover" onerror="this.style.display='none'">
+                        <div class="p-6">
+                            <h3 class="font-bold text-navy mb-2">Precision Industrial Components</h3>
+                            <p class="text-sm text-slate">Heavy machined plates, specialized hinges/pivots, and custom mechanical brackets manufactured to exact tolerances.</p>
+                        </div>
+                    </div>
+                     <div class="bg-white rounded shadow-sm border border-gray-200 overflow-hidden">
+                        <img src="images/input_file_14.png" alt="Automated Manufacturing & Complex Assemblies" class="w-full h-48 object-cover" onerror="this.style.display='none'">
+                        <div class="p-6">
+                            <h3 class="font-bold text-navy mb-2">Automated Manufacturing & Assemblies</h3>
+                            <p class="text-sm text-slate">Providing solutions to boost production through automation and customization. Capabilities include PBB assembly, Railway platform assembly, Funnel assembly, and all types of on-site assembly.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Partners Section -->
+        <section id="partners" class="py-20 px-4 max-w-7xl mx-auto text-center">
+            <h2 class="text-3xl font-bold text-navy mb-4">Our Trusted Partners</h2>
+            <div class="h-1 w-20 bg-accent mx-auto mb-12"></div>
+            <div class="flex flex-wrap justify-center gap-4">
+                <span class="bg-white border border-mid px-6 py-3 rounded-full text-navy font-semibold shadow-sm">AIF Engineering Solution</span>
+                <span class="bg-white border border-mid px-6 py-3 rounded-full text-navy font-semibold shadow-sm">Bajaj Steel</span>
+                <span class="bg-white border border-mid px-6 py-3 rounded-full text-navy font-semibold shadow-sm">MHPL</span>
+                <span class="bg-white border border-mid px-6 py-3 rounded-full text-navy font-semibold shadow-sm">RK Engineering</span>
+                <span class="bg-white border border-mid px-6 py-3 rounded-full text-navy font-semibold shadow-sm">Shree Shyam Industries</span>
+                <span class="bg-white border border-mid px-6 py-3 rounded-full text-navy font-semibold shadow-sm">VLS</span>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-navy text-white px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-4">Get In Touch</h2>
+                <div class="h-1 w-20 bg-accent mx-auto mb-12"></div>
+                <div class="grid md:grid-cols-2 gap-8 text-left bg-[#0f2c52] p-8 rounded-lg border border-gray-700">
+                    <div>
+                        <h3 class="text-xl font-bold text-white mb-4">Contact Information</h3>
+                        <p class="mb-4 text-gray-300"><strong class="text-white">Phone:</strong> +91 82377 24451</p>
+                        <p class="mb-4 text-gray-300"><strong class="text-white">Email:</strong> barbarikindustriessolutions@gmail.com</p>
+                        <p class="mb-8 text-gray-300"><strong class="text-white">Address:</strong><br>Unnati greens Shop no 3, plot no.160 Sidharth society,<br>Amravati road, Wadi, Nagpur - 440023</p>
+                    </div>
+                    <div>
+                        <img src="images/input_file_0.png" alt="Business Card" class="w-full object-contain rounded shadow-lg" onerror="this.style.display='none'">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#05101f] text-gray-400 py-8 text-center text-sm">
+        <p>&copy; 2026 Barbarik Industries Solutions. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

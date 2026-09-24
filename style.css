@@ -1,0 +1,13 @@
+
+/* Custom CSS adjustments for Barbarik Industries Solutions */
+html {
+    scroll-behavior: smooth;
+}
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+/* Ensure mobile menu transitions smoothly */
+#mobile-nav {
+    transition: all 0.3s ease-in-out;
+}
